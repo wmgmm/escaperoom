@@ -1,0 +1,140 @@
+FACILITATOR BRIEFING — AI Escape Room
+Issued by: Christopher Gravitas, IT Services
+Classification: FACILITATOR EYES ONLY
+
+======================================================================
+
+WHAT THIS IS
+
+A 30-minute competitive exercise. Participants use Microsoft Copilot's
+image analysis to investigate six evidence artifacts, identify a
+governance failure, and locate a missing grant application before a
+countdown expires.
+
+The scenario is fictional. The AI skills being practised are not.
+
+======================================================================
+
+SETUP
+
+1. Direct participants to the website URL.
+2. They register with their Cardiff University email and name.
+3. The 30-minute countdown starts the moment they click through.
+4. They work individually (or in pairs if you prefer — your call).
+
+Participants can either download the artifact images directly from the
+site (click any card) or photograph their screen and upload to Copilot.
+Either works. Downloading is cleaner.
+
+======================================================================
+
+THE SIX EXHIBITS
+
+Exhibit A — The Whiteboard
+Project timeline, names (Albright, Whitmore, Gravitas), phone number,
+password, £5M UKRI grant deadline of 17:00, URGENT stamp.
+
+Exhibit B — The Coaster
+Hotel coaster from The Royal Conference Hotel. Handwritten note:
+Room 312, Tues 18 Nov, "DON'T LOSE THE USB", Meet J. at 4pm Lobby.
+
+Exhibit C — The Letter
+Rejection letter from Prof. A. Whitmore (Research Governance) to
+Dr Albright, dated 14 Nov 2025. Cites outstanding unauthorised
+expenditure blocking grant GR-2025-0047. REJECTED stamp.
+Watermark: CODE: PHOENIX.
+
+Exhibit D — The Ledger
+Open book, pages 46-47. Highlighted line reads:
+"Backup copy lodged: Cabinet 3, Server Room B, North Wing".
+Sticky note: "See page 47!"
+
+Exhibit E — The Fragments
+Torn floor plan. Labels: North Wing, East Corridor, Server Room B
+(red X), Exit Route. Handwritten: "BACKUP HERE?"
+
+Exhibit F — The Receipt
+Castleton Univ. research expenses, REF: RES-0847. Line item:
+*UNAUTH* AI LICENSE £299.00 printed in red. Total £1,372.66,
+Dept Card ***4421.
+
+======================================================================
+
+WHAT PARTICIPANTS SUBMIT
+
+Four fields on the website:
+
+I.   The Failure   — dropdown, one correct answer
+II.  The Threat    — free text: what is at stake
+III. The Location  — free text: where is the backup
+IV.  Best Prompt   — the Copilot prompt that gave them the most
+                     useful result (this is the actual learning
+                     outcome you want to discuss)
+
+======================================================================
+
+THE CORRECT ANSWERS
+
+I — The Failure: Unsanctioned AI Tool Usage
+
+Albright purchased an AI license (£299, Ref RES-0847) without
+authorisation. This triggered a departmental account freeze, which
+blocked the grant submission.
+
+II — The Threat: The £5M UKRI grant (GR-2025-0047) will lapse at
+17:00 if the application is not filed. The Vice-Chancellor will be
+extremely unhappy. That is putting it diplomatically.
+
+III — The Location: Cabinet 3, Server Room B, North Wing
+
+Confirmed by both the ledger (Exhibit D) and the floor plan fragments
+(Exhibit E). The USB from the hotel meeting (Exhibit B) may also
+contain a copy — Room 312, The Royal Conference Hotel, 18 November.
+
+IV — Best Prompt: No single correct answer. This is the discussion
+point. Look for prompts that are specific and instructive, e.g.:
+
+  "Extract all handwritten text from this image and list it as
+   bullet points"
+
+  "Identify any names, dates, and monetary amounts visible in
+   this document"
+
+Vague prompts ("what does this show?") versus targeted ones is the
+lesson.
+
+======================================================================
+
+JUDGING
+
+The site records name, time taken, time remaining, and all four
+answers. Fastest correct submission wins. Partially correct
+submissions lose. The leaderboard is visible to all participants
+after submission.
+
+======================================================================
+
+WHAT ACTUALLY HAPPENED (FULL STORY)
+
+Dr Albright, under pressure to deliver the £5M UKRI grant proposal
+(GR-2025-0047), purchased an AI writing tool without going through
+procurement. The charge (£299, flagged as *UNAUTH* on the
+departmental expenses, Ref RES-0847) triggered an automatic account
+freeze. Prof. Whitmore (Research Governance) issued a formal
+rejection on 14 November — the letter Albright crumpled and
+presumably hoped no one would find.
+
+A physical backup of the grant application exists: Cabinet 3,
+Server Room B, North Wing. This was noted in the Authorised
+Expenditure Register (page 47) and confirmed on the floor plan
+fragments. There is also a USB drive from a meeting at The Royal
+Conference Hotel, Room 312, 18 November — referenced on the coaster.
+
+The grant can still be submitted if someone retrieves the backup
+before 17:00. That someone is your participants.
+
+======================================================================
+
+"I have done my part. The artifacts are isolated. The rest is
+ up to them."
+                                  — Christopher Gravitas, IT Services

@@ -9,7 +9,7 @@ const ARTIFACTS = [
   {
     id: 'A',
     label: 'The Whiteboard',
-    filename: 'evidence_whiteboard.png',
+    filename: 'Exhibit_A_evidence_whiteboard.png',
     svgPath: `${BASE}placeholders/evidence_whiteboard.png`,
     altText: 'Whiteboard scrawled with project notes, URGENT stamp overlaid',
     accentType: 'stamp',
@@ -18,7 +18,7 @@ const ARTIFACTS = [
   {
     id: 'B',
     label: 'The Coaster',
-    filename: 'evidence_coaster.png',
+    filename: 'Exhibit_B_evidence_coaster.png',
     svgPath: `${BASE}placeholders/evidence_coaster.png`,
     altText: 'Circular coaster object on yellow background with evidence tag',
     accentType: 'tag',
@@ -27,7 +27,7 @@ const ARTIFACTS = [
   {
     id: 'C',
     label: 'The Letter',
-    filename: 'evidence_letter.png',
+    filename: 'Exhibit_C_evidence_letter.png',
     svgPath: `${BASE}placeholders/evidence_letter.png`,
     altText: 'Crumpled letter with REJECTED stamp',
     accentType: 'stamp-red',
@@ -36,7 +36,7 @@ const ARTIFACTS = [
   {
     id: 'D',
     label: 'The Ledger',
-    filename: 'evidence_book.png',
+    filename: 'Exhibit_D_evidence_ledger.png',
     svgPath: `${BASE}placeholders/evidence_book.png`,
     altText: 'Open book silhouette with underlined text block',
     accentType: 'handwritten',
@@ -45,7 +45,7 @@ const ARTIFACTS = [
   {
     id: 'E',
     label: 'The Fragments',
-    filename: 'evidence_map.png',
+    filename: 'Exhibit_E_evidence_fragments.png',
     svgPath: `${BASE}placeholders/evidence_map.png`,
     altText: 'Four document fragments on black, held with washi tape',
     accentType: 'tape',
@@ -54,7 +54,7 @@ const ARTIFACTS = [
   {
     id: 'F',
     label: 'The Receipt',
-    filename: 'evidence_receipt.png',
+    filename: 'Exhibit_F_evidence_receipt.png',
     svgPath: `${BASE}placeholders/evidence_receipt.png`,
     altText: 'Narrow receipt strip with arrow graphic',
     accentType: 'arrow',
