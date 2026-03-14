@@ -29,8 +29,13 @@ export function submitEntry(entry) {
   } catch {}
 }
 
-// Try remote first; fall back to local silently if anything goes wrong.
-// Returns { entries: [], source: 'global'|'local' }
+// Synchronous local read -- use for immediate render.
+export function loadLocalBoard() {
+  return { entries: loadLocal(), source: 'local' };
+}
+
+// Async remote fetch -- use to upgrade after render.
+// Falls back to local silently if anything goes wrong.
 export async function loadBoard() {
   if (!LEADERBOARD_URL) return { entries: loadLocal(), source: 'local' };
   try {

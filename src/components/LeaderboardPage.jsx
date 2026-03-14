@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Leaderboard from './Leaderboard.jsx';
 import TaglineBar from './TaglineBar.jsx';
-import { loadBoard } from '../lib/leaderboard.js';
+import { loadLocalBoard, loadBoard } from '../lib/leaderboard.js';
 
 export default function LeaderboardPage() {
-  const [board, setBoard] = useState([]);
-  const [boardSource, setBoardSource] = useState('local');
+  const init = loadLocalBoard();
+  const [board, setBoard] = useState(init.entries);
+  const [boardSource, setBoardSource] = useState(init.source);
 
   const refresh = useCallback(() => {
     loadBoard().then(({ entries, source }) => { setBoard(entries); setBoardSource(source); });
