@@ -1,16 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Leaderboard from './Leaderboard.jsx';
 import TaglineBar from './TaglineBar.jsx';
-import { loadLocalBoard, loadBoard } from '../lib/leaderboard.js';
+import { loadBoard } from '../lib/leaderboard.js';
 
 export default function LeaderboardPage() {
-  const init = loadLocalBoard();
-  const [board, setBoard] = useState(init.entries);
-  const [boardSource, setBoardSource] = useState(init.source);
+  const [board, setBoard] = useState(null);
 
-  const refresh = useCallback(() => {
-    loadBoard().then(({ entries, source }) => { setBoard(entries); setBoardSource(source); });
-  }, []);
+  const refresh = useCallback(() => { loadBoard().then(setBoard); }, []);
 
   useEffect(() => {
     refresh();
@@ -35,10 +31,10 @@ export default function LeaderboardPage() {
           </div>
         </div>
 
-        {board.length === 0 ? (
+        {board === null ? null : board.length === 0 ? (
           <p className="lb-page__empty">No submissions yet. Results will appear here as investigators complete the case.</p>
         ) : (
-          <Leaderboard board={board} fullPage={true} source={boardSource} />
+          <Leaderboard board={board} fullPage={true} source="global" />
         )}
       </div>
     </>

@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Leaderboard from './Leaderboard.jsx';
-import { loadLocalBoard, loadBoard } from '../lib/leaderboard.js';
+import { loadBoard } from '../lib/leaderboard.js';
 
 export default function SuccessScreen({ onRestart, player, result }) {
-  const init = loadLocalBoard();
-  const [board, setBoard] = useState(init.entries);
-  const [boardSource, setBoardSource] = useState(init.source);
-  useEffect(() => {
-    loadBoard().then(({ entries, source }) => { setBoard(entries); setBoardSource(source); });
-  }, []);
+  const [board, setBoard] = useState(null);
+  useEffect(() => { loadBoard().then(setBoard); }, []);
 
   return (
     <div className="outcome-screen outcome-screen--success">
@@ -63,7 +59,7 @@ export default function SuccessScreen({ onRestart, player, result }) {
 
         <div className="outcome-stamp outcome-stamp--success">CLEARED</div>
 
-        {board.length > 0 && <Leaderboard board={board} source={boardSource} />}
+        {board && board.length > 0 && <Leaderboard board={board} source="global" />}
 
         <motion.button
           className="btn-restart btn-restart--success"

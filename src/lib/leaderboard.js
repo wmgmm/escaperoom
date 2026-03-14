@@ -29,25 +29,19 @@ export function submitEntry(entry) {
   } catch {}
 }
 
-// Synchronous local read -- use for immediate render.
-export function loadLocalBoard() {
-  return { entries: loadLocal(), source: 'local' };
-}
-
-// Async remote fetch -- use to upgrade after render.
-// Falls back to local silently if anything goes wrong.
+// Fetch global leaderboard. Returns entries array on success, null on any failure.
 export async function loadBoard() {
-  if (!LEADERBOARD_URL) return { entries: loadLocal(), source: 'local' };
+  if (!LEADERBOARD_URL) return null;
   try {
     const res = await fetch(
       `${LEADERBOARD_URL}?token=${encodeURIComponent(LEADERBOARD_TOKEN)}&action=read`,
-      { signal: AbortSignal.timeout(4000) }
+      { signal: AbortSignal.timeout(5000) }
     );
     if (!res.ok) throw new Error();
     const data = await res.json();
-    if (Array.isArray(data)) return { entries: data, source: 'global' };
+    if (Array.isArray(data)) return data;
     throw new Error();
   } catch {
-    return { entries: loadLocal(), source: 'local' };
+    return null;
   }
 }
