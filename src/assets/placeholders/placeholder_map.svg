@@ -1,0 +1,73 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#111"/>
+  <!-- Fragment 1: top-left -->
+  <g transform="rotate(-4, 98, 88)">
+    <rect x="22" y="22" width="150" height="120" fill="#e8dcc8" stroke="#888" stroke-width="1"/>
+    <!-- Map grid lines -->
+    <line x1="22" y1="60" x2="172" y2="60" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="22" y1="100" x2="172" y2="100" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="80" y1="22" x2="80" y2="142" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="130" y1="22" x2="130" y2="142" stroke="#ccc" stroke-width="0.8"/>
+    <!-- Building blocks -->
+    <rect x="35" y="32" width="28" height="18" fill="#bbb"/>
+    <rect x="88" y="65" width="32" height="24" fill="#bbb"/>
+    <rect x="140" y="32" width="22" height="28" fill="#bbb"/>
+    <!-- Label -->
+    <text x="97" y="130" font-family="monospace" font-size="9" fill="#555" text-anchor="middle">NORTH WING</text>
+    <!-- Washi tape top -->
+    <rect x="50" y="14" width="80" height="14" fill="#FFFF00" opacity="0.65" rx="1"/>
+    <rect x="52" y="14" width="2" height="14" fill="#e6e600" opacity="0.3"/>
+    <rect x="62" y="14" width="2" height="14" fill="#e6e600" opacity="0.3"/>
+    <rect x="72" y="14" width="2" height="14" fill="#e6e600" opacity="0.3"/>
+  </g>
+  <!-- Fragment 2: top-right -->
+  <g transform="rotate(5, 310, 85)">
+    <rect x="230" y="18" width="148" height="122" fill="#ddd4c0" stroke="#888" stroke-width="1"/>
+    <line x1="230" y1="65" x2="378" y2="65" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="230" y1="105" x2="378" y2="105" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="290" y1="18" x2="290" y2="140" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="340" y1="18" x2="340" y2="140" stroke="#ccc" stroke-width="0.8"/>
+    <rect x="244" y="28" width="34" height="26" fill="#bbb"/>
+    <rect x="298" y="72" width="28" height="20" fill="#bbb"/>
+    <!-- Red X marking -->
+    <line x1="310" y1="28" x2="370" y2="88" stroke="#CC0000" stroke-width="2.5"/>
+    <line x1="370" y1="28" x2="310" y2="88" stroke="#CC0000" stroke-width="2.5"/>
+    <text x="305" y="130" font-family="monospace" font-size="9" fill="#555" text-anchor="middle">SERVER ROOM B</text>
+    <!-- Washi tape right -->
+    <rect x="366" y="40" width="16" height="60" fill="#FFFF00" opacity="0.6" rx="1"/>
+  </g>
+  <!-- Fragment 3: bottom-left -->
+  <g transform="rotate(3, 95, 218)">
+    <rect x="20" y="158" width="150" height="116" fill="#e0d5be" stroke="#888" stroke-width="1"/>
+    <line x1="20" y1="200" x2="170" y2="200" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="20" y1="238" x2="170" y2="238" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="75" y1="158" x2="75" y2="274" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="125" y1="158" x2="125" y2="274" stroke="#ccc" stroke-width="0.8"/>
+    <rect x="30" y="168" width="36" height="22" fill="#bbb"/>
+    <rect x="82" y="208" width="30" height="24" fill="#bbb"/>
+    <text x="95" y="265" font-family="monospace" font-size="9" fill="#555" text-anchor="middle">EAST CORRIDOR</text>
+    <!-- Washi tape left -->
+    <rect x="12" y="180" width="14" height="58" fill="#FFFF00" opacity="0.55" rx="1"/>
+  </g>
+  <!-- Fragment 4: bottom-right -->
+  <g transform="rotate(-6, 315, 215)">
+    <rect x="232" y="156" width="146" height="118" fill="#ddd0ba" stroke="#888" stroke-width="1"/>
+    <line x1="232" y1="196" x2="378" y2="196" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="232" y1="236" x2="378" y2="236" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="290" y1="156" x2="290" y2="274" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="340" y1="156" x2="340" y2="274" stroke="#ccc" stroke-width="0.8"/>
+    <rect x="244" y="165" width="38" height="22" fill="#bbb"/>
+    <rect x="296" y="205" width="34" height="22" fill="#bbb"/>
+    <!-- Arrow pointing up-right -->
+    <path d="M250,250 L310,185" stroke="#CC0000" stroke-width="2" fill="none" marker-end="url(#arrowRed)"/>
+    <text x="308" y="268" font-family="monospace" font-size="9" fill="#555" text-anchor="middle">EXIT ROUTE</text>
+    <!-- Washi tape bottom -->
+    <rect x="270" y="268" width="70" height="12" fill="#FFFF00" opacity="0.6" rx="1"/>
+  </g>
+  <defs>
+    <marker id="arrowRed" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#CC0000"/>
+    </marker>
+  </defs>
+</svg>

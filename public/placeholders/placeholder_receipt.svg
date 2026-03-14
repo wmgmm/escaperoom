@@ -1,0 +1,51 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#1a1a2e"/>
+  <!-- Receipt strip shadow -->
+  <rect x="153" y="8" width="100" height="288" rx="3" fill="#000" opacity="0.3"/>
+  <!-- Receipt paper -->
+  <rect x="148" y="5" width="104" height="290" rx="2" fill="#f8f5ee"/>
+  <!-- Perforated top edge -->
+  <line x1="148" y1="18" x2="252" y2="18" stroke="#ddd" stroke-width="1" stroke-dasharray="3,4"/>
+  <!-- Header -->
+  <text x="200" y="38" font-family="monospace" font-size="8" fill="#333" text-anchor="middle" font-weight="bold">CASTLETON UNIV.</text>
+  <text x="200" y="50" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">RESEARCH EXPENSES</text>
+  <line x1="155" y1="56" x2="245" y2="56" stroke="#aaa" stroke-width="0.8"/>
+  <!-- Date and ref -->
+  <text x="155" y="68" font-family="monospace" font-size="7" fill="#666">DATE: 04/11/25</text>
+  <text x="155" y="79" font-family="monospace" font-size="7" fill="#666">REF: RES-0847</text>
+  <line x1="155" y1="85" x2="245" y2="85" stroke="#ccc" stroke-width="0.5"/>
+  <!-- Items -->
+  <text x="155" y="97" font-family="monospace" font-size="7" fill="#333">CLOUD SUB....£149.99</text>
+  <text x="155" y="109" font-family="monospace" font-size="7" fill="#333">AI LICENSE..£299.00</text>
+  <text x="155" y="121" font-family="monospace" font-size="7" fill="#CC0000">*UNAUTH*....£299.00</text>
+  <text x="155" y="133" font-family="monospace" font-size="7" fill="#333">CONF FEES...£85.00</text>
+  <text x="155" y="145" font-family="monospace" font-size="7" fill="#333">TRAVEL......£212.40</text>
+  <line x1="155" y1="152" x2="245" y2="152" stroke="#aaa" stroke-width="0.8"/>
+  <text x="155" y="163" font-family="monospace" font-size="7" fill="#333" font-weight="bold">SUBTOTAL...£1046.39</text>
+  <text x="155" y="174" font-family="monospace" font-size="7" fill="#333">VAT (20%)...£209.28</text>
+  <line x1="155" y1="180" x2="245" y2="180" stroke="#333" stroke-width="1"/>
+  <text x="155" y="191" font-family="monospace" font-size="8" fill="#000" font-weight="bold">TOTAL......£1255.67</text>
+  <line x1="155" y1="197" x2="245" y2="197" stroke="#aaa" stroke-width="0.5"/>
+  <!-- Payment method -->
+  <text x="200" y="210" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">DEPT CARD: ***4421</text>
+  <text x="200" y="222" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">APPROVED</text>
+  <line x1="155" y1="228" x2="245" y2="228" stroke="#ddd" stroke-width="0.8"/>
+  <!-- Arrow graphic pointing at unauthorised item -->
+  <path d="M118,121 L144,121" stroke="#FFFF00" stroke-width="2.5" fill="none" marker-end="url(#arrowYellow)"/>
+  <text x="58" y="118" font-family="monospace" font-size="8" fill="#FFFF00" font-weight="bold">KEY</text>
+  <text x="48" y="129" font-family="monospace" font-size="8" fill="#FFFF00" font-weight="bold">ITEM</text>
+  <!-- Barcode at bottom -->
+  <rect x="162" y="240" width="76" height="28" fill="none"/>
+  {Array.from({length: 20}).map((_, i) =>
+    `<rect x="${162 + i*4}" y="240" width="${i%3===0?2:1}" height="22" fill="#333"/>`
+  ).join('')}
+  <text x="200" y="278" font-family="monospace" font-size="6" fill="#666" text-anchor="middle">0847-2025-RES-CAST</text>
+  <!-- Perforated bottom edge -->
+  <line x1="148" y1="285" x2="252" y2="285" stroke="#ddd" stroke-width="1" stroke-dasharray="3,4"/>
+  <defs>
+    <marker id="arrowYellow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#FFFF00"/>
+    </marker>
+  </defs>
+</svg>
