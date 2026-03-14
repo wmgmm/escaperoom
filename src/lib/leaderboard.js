@@ -30,8 +30,9 @@ export function submitEntry(entry) {
 }
 
 // Try remote first; fall back to local silently if anything goes wrong.
+// Returns { entries: [], source: 'global'|'local' }
 export async function loadBoard() {
-  if (!LEADERBOARD_URL) return loadLocal();
+  if (!LEADERBOARD_URL) return { entries: loadLocal(), source: 'local' };
   try {
     const res = await fetch(
       `${LEADERBOARD_URL}?token=${encodeURIComponent(LEADERBOARD_TOKEN)}&action=read`,
@@ -39,9 +40,9 @@ export async function loadBoard() {
     );
     if (!res.ok) throw new Error();
     const data = await res.json();
-    if (Array.isArray(data)) return data;
+    if (Array.isArray(data)) return { entries: data, source: 'global' };
     throw new Error();
   } catch {
-    return loadLocal();
+    return { entries: loadLocal(), source: 'local' };
   }
 }

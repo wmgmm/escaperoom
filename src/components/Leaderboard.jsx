@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const PREVIEW_COUNT = 5;
 
-export default function Leaderboard({ board, dark = false, fullPage = false }) {
+export default function Leaderboard({ board, dark = false, fullPage = false, source = 'local' }) {
   const [expanded, setExpanded] = useState(fullPage);
 
   const visible = expanded ? board : board.slice(0, PREVIEW_COUNT);
@@ -18,6 +18,9 @@ export default function Leaderboard({ board, dark = false, fullPage = false }) {
         </h2>
         <p className={`leaderboard__sub${dark ? ' leaderboard__sub--dark' : ''}`}>
           {board.length} submission{board.length !== 1 ? 's' : ''} &mdash; ranked by time remaining
+          <span className={`leaderboard__source leaderboard__source--${source}`}>
+            {source === 'global' ? '● GLOBAL' : '● LOCAL'}
+          </span>
         </p>
       </div>
 

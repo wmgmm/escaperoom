@@ -5,7 +5,10 @@ import { loadBoard } from '../lib/leaderboard.js';
 
 export default function SuccessScreen({ onRestart, player, result }) {
   const [board, setBoard] = useState([]);
-  useEffect(() => { loadBoard().then(setBoard); }, []);
+  const [boardSource, setBoardSource] = useState('local');
+  useEffect(() => {
+    loadBoard().then(({ entries, source }) => { setBoard(entries); setBoardSource(source); });
+  }, []);
 
   return (
     <div className="outcome-screen outcome-screen--success">
@@ -59,7 +62,7 @@ export default function SuccessScreen({ onRestart, player, result }) {
 
         <div className="outcome-stamp outcome-stamp--success">CLEARED</div>
 
-        {board.length > 0 && <Leaderboard board={board} />}
+        {board.length > 0 && <Leaderboard board={board} source={boardSource} />}
 
         <motion.button
           className="btn-restart btn-restart--success"

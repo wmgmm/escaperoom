@@ -5,8 +5,11 @@ import { loadBoard } from '../lib/leaderboard.js';
 
 export default function LeaderboardPage() {
   const [board, setBoard] = useState([]);
+  const [boardSource, setBoardSource] = useState('local');
 
-  const refresh = useCallback(() => { loadBoard().then(setBoard); }, []);
+  const refresh = useCallback(() => {
+    loadBoard().then(({ entries, source }) => { setBoard(entries); setBoardSource(source); });
+  }, []);
 
   useEffect(() => {
     refresh();
@@ -34,7 +37,7 @@ export default function LeaderboardPage() {
         {board.length === 0 ? (
           <p className="lb-page__empty">No submissions yet. Results will appear here as investigators complete the case.</p>
         ) : (
-          <Leaderboard board={board} fullPage={true} />
+          <Leaderboard board={board} fullPage={true} source={boardSource} />
         )}
       </div>
     </>
