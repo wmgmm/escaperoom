@@ -29,6 +29,11 @@ export function submitEntry(entry) {
   } catch {}
 }
 
+// Synchronous local read for instant first paint.
+export function loadLocalBoard() {
+  return loadLocal();
+}
+
 // Fetch global leaderboard. Returns entries array on success, null on any failure.
 export async function loadBoard() {
   if (!LEADERBOARD_URL) return null;
