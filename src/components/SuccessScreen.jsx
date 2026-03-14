@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Leaderboard from './Leaderboard.jsx';
-
-function loadBoard() {
-  try { return JSON.parse(localStorage.getItem('escaperoom_leaderboard') || '[]'); }
-  catch { return []; }
-}
+import { loadBoard } from '../lib/leaderboard.js';
 
 export default function SuccessScreen({ onRestart, player, result }) {
   const [board, setBoard] = useState([]);
-  useEffect(() => { setBoard(loadBoard()); }, []);
+  useEffect(() => { loadBoard().then(setBoard); }, []);
 
   return (
     <div className="outcome-screen outcome-screen--success">

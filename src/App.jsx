@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { submitEntry } from './lib/leaderboard.js';
 import SplashScreen from './components/SplashScreen.jsx';
 import Countdown from './components/Countdown.jsx';
 import EvidenceGallery from './components/EvidenceGallery.jsx';
@@ -112,14 +113,7 @@ export default function App() {
       submittedAt: new Date().toLocaleTimeString(),
     };
 
-    // Persist to local leaderboard
-    try {
-      const existing = JSON.parse(localStorage.getItem('escaperoom_leaderboard') || '[]');
-      existing.unshift(entry);
-      localStorage.setItem('escaperoom_leaderboard', JSON.stringify(existing.slice(0, 30)));
-    } catch {
-      // localStorage unavailable
-    }
+    submitEntry(entry);
 
     setSubmitResult(entry);
     if (!solved) setAttemptCount(c => c + 1);

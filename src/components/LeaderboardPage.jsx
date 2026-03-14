@@ -1,20 +1,15 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Leaderboard from './Leaderboard.jsx';
 import TaglineBar from './TaglineBar.jsx';
-
-const STORAGE_KEY = 'escaperoom_leaderboard';
-
-function loadBoard() {
-  try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); }
-  catch { return []; }
-}
+import { loadBoard } from '../lib/leaderboard.js';
 
 export default function LeaderboardPage() {
-  const [board, setBoard] = useState(loadBoard);
+  const [board, setBoard] = useState([]);
 
-  const refresh = useCallback(() => setBoard(loadBoard()), []);
+  const refresh = useCallback(() => { loadBoard().then(setBoard); }, []);
 
   useEffect(() => {
+    refresh();
     window.addEventListener('focus', refresh);
     return () => window.removeEventListener('focus', refresh);
   }, [refresh]);
