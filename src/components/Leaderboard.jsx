@@ -19,7 +19,7 @@ export default function Leaderboard({ board, dark = false, fullPage = false, sou
         <p className={`leaderboard__sub${dark ? ' leaderboard__sub--dark' : ''}`}>
           {board.length} submission{board.length !== 1 ? 's' : ''} &mdash; ranked by time remaining
           <span className={`leaderboard__source leaderboard__source--${source}`}>
-            {source === 'global' ? '● GLOBAL' : '● LOCAL'}
+            {source === 'global' ? '● GLOBAL' : '● MY RESULTS'}
           </span>
         </p>
       </div>

@@ -68,8 +68,8 @@ function doGet(e) {
       name:          r[0],
       email:         r[1],
       solved:        r[2] === 'YES',
-      timeRemaining: r[3],
-      timeTaken:     r[4],
+      timeRemaining: formatTimeValue(r[3]),
+      timeTaken:     formatTimeValue(r[4]),
       submittedAt:   r[5],
       failure:       r[6],
       threat:        r[7],
@@ -103,9 +103,22 @@ function getSheet() {
   return sheet;
 }
 
+function formatTimeValue(val) {
+  if (val instanceof Date) {
+    // Sheets treats "MM:SS" as HH:MM, so stored value is 60x too large.
+    // Divide by 60 to recover the original seconds.
+    const storedSeconds = Math.round((val - new Date(1899, 11, 30)) / 1000);
+    const actualSeconds = Math.round(storedSeconds / 60);
+    const m = Math.floor(actualSeconds / 60);
+    const s = actualSeconds % 60;
+    return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  }
+  return String(val || '');
+}
+
 function timeToSeconds(timeStr) {
   if (!timeStr) return 0;
-  const [m, s] = timeStr.split(':').map(Number);
+  const [m, s] = String(timeStr).split(':').map(Number);
   return (m || 0) * 60 + (s || 0);
 }
 
