@@ -26,6 +26,18 @@ That is all the briefing you require. The rest is on screen.
 
 ---
 
+## INTELLIGENCE UPDATES — TEAMS CHANNEL
+
+During the investigation I will be posting updates to the Teams chat
+displayed in the room. These are not optional reading. I do not post
+for the benefit of my own morale. If you are ignoring the screen,
+you are ignoring evidence.
+
+I will not be posting the answer. I will be posting observations.
+There is a difference. Pay attention to it.
+
+---
+
 ## ACCESSING MICROSOFT COPILOT
 
 Open one of the following in your browser:
@@ -34,27 +46,25 @@ Open one of the following in your browser:
 - **Microsoft 365** — Copilot icon in the top right of any app
 - **Windows 11** — Copilot button in the taskbar
 
-You need to be signed in with your `@cardiff.ac.uk` account to access
+Sign in with your `@cardiff.ac.uk` account. The university licence covers
 image analysis. If it asks you to upgrade, you are in the wrong place.
-The university licence covers this.
 
 ---
 
-## HOW TO ANALYSE AN IMAGE
+## HOW TO GET AN ARTIFACT INTO COPILOT
 
-**Step 1 — Download the artifact**
-Click any evidence card on the site. The file saves to your Downloads folder.
+You have two options. Both work. Use whichever suits your device.
 
-**Step 2 — Open Copilot and attach the image**
-In the Copilot chat box, click the **paperclip / attachment icon**.
-Select the file you just downloaded.
+**Option A — Download from the website**
+Click any evidence card. The file saves to your Downloads folder.
+In Copilot, click the **paperclip / attachment icon** and select the file.
 
-**Step 3 — Type your prompt and send**
-Do not just ask "what is this?" That is not a prompt. That is a question
-a confused person asks at an art gallery.
-
-**Step 4 — Repeat for all six artifacts**
-You may investigate in any order. Cross-reference what you find.
+**Option B — Photograph with your phone**
+Open Microsoft Copilot on your phone (M365 app or copilot.microsoft.com).
+Tap the camera or attachment icon and photograph the artifact directly
+from the screen or a printed copy. Copilot can analyse a photo just as
+well as a downloaded file, provided you hold the camera steady and the
+text is legible. It cannot work miracles. Neither can I.
 
 ---
 
@@ -106,6 +116,7 @@ It is also the one most people rush. Do not rush it.
 - You have not looked at all six artifacts
 - You have looked at them but not asked Copilot to extract the text
 - You have extracted the text but not connected it across artifacts
+- You are ignoring the Teams screen
 - You are overthinking it
 
 The answer is in the evidence. It has always been in the evidence.
