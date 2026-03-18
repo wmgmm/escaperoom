@@ -112,7 +112,7 @@ export default function SplashScreen({ onStart }) {
           whileTap={{ scale: 0.97 }}
           transition={{ duration: 0.15 }}
         >
-          OPEN THE ISSUE &mdash; START TIMER 30:00
+          OPEN THE CASE &mdash; START TIMER 30:00
         </motion.button>
 
         <p className="splash-warning">
