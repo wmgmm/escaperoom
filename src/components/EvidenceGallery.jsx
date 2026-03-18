@@ -77,8 +77,7 @@ export default function EvidenceGallery() {
           from the chaos. Treat them as data points which you can investigate in any order. Use Copilot&rsquo;s image analysis to determine
           the root cause of this failure, precisely what is at stake, and where the physical backup
           is hidden. The Vice-Chancellor demands answers. Don&rsquo;t just look at the images &mdash;
-          instruct Copilot on what to find{' '}
-          <em>(e.g., &ldquo;Extract the handwritten names&rdquo;)</em>.
+          instruct Copilot on your phone or laptop on what to find!
         </p>
         <span className="directive__sig">— Christopher Gravitas, IT Services</span>
       </div>
