@@ -30,14 +30,9 @@ export default function SplashScreen({ onStart }) {
         <div className="splash-hero">
           <div className="cover-brand-stamp cover-brand-stamp--main">THE MATTS PRESENT A DIGITAL ESCAPE ROOM</div>
           <div className="cover-brand-stamp cover-brand-stamp--uni">CARDIFF UNIVERSITY</div>
-          <div className="cover-brand-stamp cover-brand-stamp--presenter">CONFIDENTIAL</div>
         </div>
 
         {/* Headline */}
-        <div className="splash-kicker">
-          EXCLUSIVE INVESTIGATION &mdash;{' '}
-          <em className="splash-kicker__tagline">A Digital Escape Room using Microsoft Copilot to assist with your escape</em>
-        </div>
         <h1 className="splash-headline">THE ALBRIGHT AFFAIR</h1>
         <p className="splash-deck">
           &pound;5M Grant Vanishes: A Governance Scandal in Six Acts
