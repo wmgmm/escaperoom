@@ -25,12 +25,12 @@ export default function Leaderboard({ board, dark = false, fullPage = false, sou
         <table className={`leaderboard__table${dark ? ' leaderboard__table--dark' : ''}`}>
           <thead>
             <tr>
-              <th>#</th>
-              <th>Investigator</th>
-              <th>Time left</th>
-              <th>Verdict</th>
-              <th>Best prompt</th>
-              {!dark && <th>Their solution</th>}
+              <th scope="col">#</th>
+              <th scope="col">Investigator</th>
+              <th scope="col">Time left</th>
+              <th scope="col">Verdict</th>
+              <th scope="col">Best prompt</th>
+              {!dark && <th scope="col">Their solution</th>}
             </tr>
           </thead>
           <tbody>

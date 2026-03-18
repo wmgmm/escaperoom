@@ -58,6 +58,9 @@ export default function SubmissionPortal({ onSubmit }) {
             className={`form-select ${errors.failure ? 'form-select--error' : ''}`}
             value={failure}
             onChange={e => setFailure(e.target.value)}
+            aria-required="true"
+            aria-invalid={errors.failure ? 'true' : undefined}
+            aria-describedby={errors.failure ? 'err-failure' : undefined}
           >
             {FAILURE_OPTIONS.map(opt => (
               <option key={opt.value} value={opt.value} disabled={opt.value === ''}>
@@ -65,7 +68,7 @@ export default function SubmissionPortal({ onSubmit }) {
               </option>
             ))}
           </select>
-          {errors.failure && <span className="form-error">{errors.failure}</span>}
+          {errors.failure && <span id="err-failure" className="form-error" role="alert">{errors.failure}</span>}
         </div>
 
         <div className="form-field">
@@ -80,8 +83,11 @@ export default function SubmissionPortal({ onSubmit }) {
             value={threat}
             onChange={e => setThreat(e.target.value)}
             placeholder="e.g. Withdrawal of the &pound;5M UKRI grant"
+            aria-required="true"
+            aria-invalid={errors.threat ? 'true' : undefined}
+            aria-describedby={errors.threat ? 'err-threat' : undefined}
           />
-          {errors.threat && <span className="form-error">{errors.threat}</span>}
+          {errors.threat && <span id="err-threat" className="form-error" role="alert">{errors.threat}</span>}
         </div>
 
         <div className="form-field">
@@ -96,8 +102,11 @@ export default function SubmissionPortal({ onSubmit }) {
             value={location}
             onChange={e => setLocation(e.target.value)}
             placeholder="e.g. Server Room B"
+            aria-required="true"
+            aria-invalid={errors.location ? 'true' : undefined}
+            aria-describedby={errors.location ? 'err-location' : undefined}
           />
-          {errors.location && <span className="form-error">{errors.location}</span>}
+          {errors.location && <span id="err-location" className="form-error" role="alert">{errors.location}</span>}
         </div>
 
         <div className="form-field form-field--full">
@@ -112,8 +121,11 @@ export default function SubmissionPortal({ onSubmit }) {
             onChange={e => setPrompt(e.target.value)}
             placeholder={`e.g. "Analyse this image and extract a bulleted list of all names, dates, and monetary amounts mentioned."`}
             rows={3}
+            aria-required="true"
+            aria-invalid={errors.prompt ? 'true' : undefined}
+            aria-describedby={errors.prompt ? 'err-prompt' : undefined}
           />
-          {errors.prompt && <span className="form-error">{errors.prompt}</span>}
+          {errors.prompt && <span id="err-prompt" className="form-error" role="alert">{errors.prompt}</span>}
         </div>
 
         <div className="form-actions">

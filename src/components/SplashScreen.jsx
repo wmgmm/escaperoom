@@ -86,8 +86,12 @@ export default function SplashScreen({ onStart }) {
                 value={name}
                 onChange={e => setName(e.target.value)}
                 onKeyDown={e => e.key === 'Enter' && handleStart()}
+                aria-label="Your name"
+                aria-required="true"
+                aria-invalid={errors.name ? 'true' : undefined}
+                aria-describedby={errors.name ? 'err-name' : undefined}
               />
-              {errors.name && <span className="splash-field-error">{errors.name}</span>}
+              {errors.name && <span id="err-name" className="splash-field-error" role="alert">{errors.name}</span>}
             </div>
             <div className="splash-field">
               <input
@@ -97,8 +101,12 @@ export default function SplashScreen({ onStart }) {
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 onKeyDown={e => e.key === 'Enter' && handleStart()}
+                aria-label="Email address"
+                aria-required="true"
+                aria-invalid={errors.email ? 'true' : undefined}
+                aria-describedby={errors.email ? 'err-email' : undefined}
               />
-              {errors.email && <span className="splash-field-error">{errors.email}</span>}
+              {errors.email && <span id="err-email" className="splash-field-error" role="alert">{errors.email}</span>}
             </div>
           </div>
         </div>
