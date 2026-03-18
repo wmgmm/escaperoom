@@ -43,10 +43,6 @@ export default function CopilotHint() {
             <div className="copilot-hint__inner">
               <div className="copilot-hint__meta">
                 <span className="copilot-hint__artifact">{HINT.artifact}</span>
-                <span className="copilot-hint__label">
-                  {HINT.label}
-                  <em> ({HINT.sublabel})</em>
-                </span>
               </div>
 
               <div className="copilot-hint__prompt-block">
@@ -59,10 +55,6 @@ export default function CopilotHint() {
                   {copied ? 'COPIED!' : 'COPY PROMPT'}
                 </button>
               </div>
-
-              <p className="copilot-hint__instructions">
-                Download Exhibit A above &rarr; open Microsoft Copilot &rarr; attach the image &rarr; paste this prompt. Apply the same analytical approach to all six artifacts.
-              </p>
             </div>
           </motion.div>
         )}
