@@ -5,7 +5,7 @@ import { loadBoard } from '../lib/leaderboard.js';
 
 export default function SuccessScreen({ onRestart, player, result }) {
   const [board, setBoard] = useState(null);
-  useEffect(() => { loadBoard().then(setBoard); }, []);
+  useEffect(() => { window.scrollTo(0, 0); loadBoard().then(setBoard); }, []);
 
   return (
     <div className="outcome-screen outcome-screen--success">

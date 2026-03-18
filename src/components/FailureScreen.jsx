@@ -12,7 +12,7 @@ function loadBoard() {
 export default function FailureScreen({ onRestart, timeExpired, result, attemptCount }) {
   const [board, setBoard] = useState([]);
   const [quote] = useState(() => getGravitasQuote(attemptCount || 1));
-  useEffect(() => { setBoard(loadBoard()); }, []);
+  useEffect(() => { window.scrollTo(0, 0); setBoard(loadBoard()); }, []);
 
   return (
     <div className="outcome-screen outcome-screen--failure">
@@ -64,8 +64,6 @@ export default function FailureScreen({ onRestart, timeExpired, result, attemptC
         </blockquote>
 
         <div className="outcome-stamp outcome-stamp--failure">REDACTED</div>
-
-        <HintReveal dark={true} />
 
         {board.length > 0 && <Leaderboard board={board} dark={true} />}
 

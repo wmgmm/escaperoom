@@ -963,7 +963,7 @@ h1, h2, h3 {
 .outcome-screen {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 3rem 2rem;
 }
@@ -2120,6 +2120,14 @@ h1, h2, h3 {
 
   .leaderboard__table {
     font-size: 0.65rem;
+  }
+
+  /* Hide verbose columns on mobile -- keep rank, name, time, verdict */
+  .leaderboard__table th:nth-child(5),
+  .leaderboard__table td:nth-child(5),
+  .leaderboard__table th:nth-child(6),
+  .leaderboard__table td:nth-child(6) {
+    display: none;
   }
 
   .splash-footer {
