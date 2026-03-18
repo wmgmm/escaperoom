@@ -34,7 +34,7 @@ export default function EvidenceCard({ artifact, index }) {
     setDownloading(true);
     // Create a download link for the SVG
     const link = document.createElement('a');
-    link.href = artifact.svgPath;
+    link.href = artifact.downloadPath || artifact.svgPath;
     link.download = artifact.filename;
     document.body.appendChild(link);
     link.click();
