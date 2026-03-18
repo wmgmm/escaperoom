@@ -5,7 +5,7 @@ const HINT = {
   artifact: 'EXHIBIT A — THE WHITEBOARD',
   label: 'OPTIMISED COPILOT DIRECTIVE',
   sublabel: 'Filtering Noise',
-  prompt: `You are a forensic analyst. Ignore diagrams. Extract: names, deadlines, monetary amounts. Three bullet lists.`,
+  prompt: `Please read the text on this whiteboard. Extract the information into simple categories`,
 };
 
 export default function CopilotHint() {
