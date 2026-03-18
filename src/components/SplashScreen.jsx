@@ -62,9 +62,8 @@ export default function SplashScreen({ onStart }) {
           <li className="splash-step">
             <span className="splash-step__num">3</span>
             <span className="splash-step__text">
-              <strong>Analyse with Copilot</strong> by attaching each image and experimenting with prompts like{' '}
-              <em>"Analyse this photo and extract the key names, dates, and any suspicious entries."</em>{' '}
-              Find the most useful prompts to solve the case.
+              <strong>Analyse with Copilot</strong> -- upload images to Copilot and try prompts like{' '}
+              <em>"Extract all key information."</em>
             </span>
           </li>
         </ol>
