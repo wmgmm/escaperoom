@@ -69,7 +69,7 @@ export default function Leaderboard({ board, dark = false, fullPage = false, sou
             rel="noopener noreferrer"
             className="leaderboard__global-btn"
           >
-            &#127758; VIEW GLOBAL LEADERBOARD
+            VIEW GLOBAL LEADERBOARD
           </a>
           <p className="leaderboard__global-hint">See how all participants ranked across every session</p>
         </div>

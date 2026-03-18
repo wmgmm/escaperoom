@@ -6,13 +6,11 @@ import { loadBoard } from '../lib/leaderboard.js';
 export default function LeaderboardPage() {
   const [board, setBoard] = useState(null);
 
-  const refresh = useCallback(() => { loadBoard().then(setBoard); }, []);
+  const refresh = useCallback(() => {
+    loadBoard().then(result => { if (result !== null) setBoard(result); });
+  }, []);
 
-  useEffect(() => {
-    refresh();
-    window.addEventListener('focus', refresh);
-    return () => window.removeEventListener('focus', refresh);
-  }, [refresh]);
+  useEffect(() => { refresh(); }, [refresh]);
 
   return (
     <>
