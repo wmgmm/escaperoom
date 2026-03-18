@@ -85,9 +85,11 @@ export default function EvidenceGallery() {
 
       <div className="evidence-section__header">
         <h2 className="evidence-section__title">SIX ACTS OF EVIDENCE</h2>
-        <p className="evidence-section__instructions">
-          Download each artifact &mdash; analyse with Microsoft Copilot &mdash; submit your findings below.
-        </p>
+        <ol className="evidence-section__steps">
+          <li>Download each artifact</li>
+          <li>Analyse with Microsoft Copilot</li>
+          <li>Submit your findings below</li>
+        </ol>
       </div>
       <div className="evidence-grid">
         {ARTIFACTS.map((artifact, i) => (

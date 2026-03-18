@@ -539,14 +539,44 @@ h1, h2, h3 {
   letter-spacing: -0.01em;
 }
 
-.evidence-section__instructions {
+.evidence-section__steps {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #444;
-  max-width: 55ch;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
   text-align: right;
+}
+
+.evidence-section__steps li {
+  white-space: nowrap;
+}
+
+.evidence-section__steps li::before {
+  content: counter(step) ". ";
+  counter-increment: step;
+  font-weight: 700;
+  color: var(--red);
+}
+
+.evidence-section__steps {
+  counter-reset: step;
+}
+
+@media (max-width: 650px) {
+  .evidence-section__steps {
+    text-align: left;
+  }
+
+  .evidence-section__steps li {
+    white-space: normal;
+  }
 }
 
 /* Evidence grid */
