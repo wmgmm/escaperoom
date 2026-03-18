@@ -119,7 +119,7 @@ export default function SubmissionPortal({ onSubmit }) {
             className={`form-textarea ${errors.prompt ? 'form-textarea--error' : ''}`}
             value={prompt}
             onChange={e => setPrompt(e.target.value)}
-            placeholder={`e.g. "Analyse this image and extract a bulleted list of all names, dates, and monetary amounts mentioned."`}
+            placeholder={`e.g. "Please read the text on this whiteboard. Extract the information into simple categories"`}
             rows={3}
             aria-required="true"
             aria-invalid={errors.prompt ? 'true' : undefined}
