@@ -87,7 +87,7 @@ export default function EvidenceGallery() {
         <h2 className="evidence-section__title">SIX ACTS OF EVIDENCE</h2>
         <ol className="evidence-section__steps">
           <li>Download each artifact</li>
-          <li>Analyse with Microsoft Copilot</li>
+          <li>Analyse with <a href="https://m365copilot.com/" target="_blank" rel="noopener noreferrer" className="evidence-steps__link">Microsoft Copilot</a></li>
           <li>Submit your findings below</li>
         </ol>
       </div>

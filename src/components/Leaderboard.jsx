@@ -11,14 +11,8 @@ export default function Leaderboard({ board, dark = false, fullPage = false, sou
     <div className={`leaderboard${dark ? ' leaderboard--dark' : ''}`}>
       <div className="leaderboard__header">
         <h2 className={`leaderboard__title${dark ? ' leaderboard__title--dark' : ''}`}>
-          PROMPT LEADERBOARD
+          MY PROMPT LEADERBOARD
         </h2>
-        <p className={`leaderboard__sub${dark ? ' leaderboard__sub--dark' : ''}`}>
-          {board.length} submission{board.length !== 1 ? 's' : ''} &mdash; ranked by time remaining
-          <span className={`leaderboard__source leaderboard__source--${source}`}>
-            {source === 'global' ? '● GLOBAL' : '● MY RESULTS'}
-          </span>
-        </p>
       </div>
 
       <div className="leaderboard__table-wrap">

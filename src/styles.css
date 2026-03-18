@@ -569,6 +569,16 @@ h1, h2, h3 {
   counter-reset: step;
 }
 
+.evidence-steps__link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.evidence-steps__link:hover {
+  color: var(--red);
+}
+
 @media (max-width: 650px) {
   .evidence-section__steps {
     text-align: left;
