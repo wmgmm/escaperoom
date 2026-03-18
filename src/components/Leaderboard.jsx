@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const PREVIEW_COUNT = 5;
 
 export default function Leaderboard({ board, dark = false, fullPage = false, source = 'local' }) {
-  const [expanded, setExpanded] = useState(fullPage);
-
-  const visible = expanded ? board : board.slice(0, PREVIEW_COUNT);
-  const hidden = board.length - PREVIEW_COUNT;
+  const visible = fullPage ? board : board.slice(0, PREVIEW_COUNT);
 
   const darkMod = dark ? '--dark' : '';
 
@@ -63,32 +60,18 @@ export default function Leaderboard({ board, dark = false, fullPage = false, sou
         </table>
       </div>
 
-      {/* Expand / collapse */}
-      {!fullPage && board.length > PREVIEW_COUNT && (
-        <div className="leaderboard__expand-bar">
-          {!expanded ? (
-            <button className="leaderboard__expand-btn" onClick={() => setExpanded(true)}>
-              Show all {board.length} entries &darr;
-            </button>
-          ) : (
-            <button className="leaderboard__expand-btn" onClick={() => setExpanded(false)}>
-              Show fewer &uarr;
-            </button>
-          )}
-        </div>
-      )}
-
-      {/* Link to full leaderboard page */}
+      {/* Link to global leaderboard page */}
       {!fullPage && (
         <div className="leaderboard__footer">
           <a
             href={`${window.location.pathname}?leaderboard`}
             target="_blank"
             rel="noopener noreferrer"
-            className="leaderboard__full-link"
+            className="leaderboard__global-btn"
           >
-            Open full leaderboard page &rarr;
+            &#127758; VIEW GLOBAL LEADERBOARD
           </a>
+          <p className="leaderboard__global-hint">See how all participants ranked across every session</p>
         </div>
       )}
     </div>

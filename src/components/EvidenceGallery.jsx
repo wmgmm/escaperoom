@@ -41,7 +41,7 @@ const ARTIFACTS = [
     downloadPath: `${BASE}placeholders/Exhibit_D_Raw_Meeting_Transcript.pdf`,
     altText: 'Teams meeting transcript screenshot',
     accentType: 'handwritten',
-    accentText: 'xlsx',
+    accentText: 'pdf',
   },
   {
     id: 'E',

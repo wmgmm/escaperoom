@@ -5,7 +5,7 @@ const HINT = {
   artifact: 'EXHIBIT A — THE WHITEBOARD',
   label: 'OPTIMISED COPILOT DIRECTIVE',
   sublabel: 'Filtering Noise',
-  prompt: `Analyse this chaotic whiteboard. Ignore the noise of diagrams and doodles. Extract a clean bulleted list of names and deadlines only.`,
+  prompt: `You are a forensic analyst. Ignore diagrams. Extract: names, deadlines, monetary amounts. Three bullet lists.`,
 };
 
 export default function CopilotHint() {
