@@ -82,7 +82,7 @@ export default function SubmissionPortal({ onSubmit }) {
             className={`form-input ${errors.threat ? 'form-input--error' : ''}`}
             value={threat}
             onChange={e => setThreat(e.target.value)}
-            placeholder="e.g. Withdrawal of the &pound;5M UKRI grant"
+            placeholder="e.g. The cat escapes"
             aria-required="true"
             aria-invalid={errors.threat ? 'true' : undefined}
             aria-describedby={errors.threat ? 'err-threat' : undefined}
@@ -101,7 +101,7 @@ export default function SubmissionPortal({ onSubmit }) {
             className={`form-input ${errors.location ? 'form-input--error' : ''}`}
             value={location}
             onChange={e => setLocation(e.target.value)}
-            placeholder="e.g. Server Room B"
+            placeholder="e.g. Behind the sofa"
             aria-required="true"
             aria-invalid={errors.location ? 'true' : undefined}
             aria-describedby={errors.location ? 'err-location' : undefined}
