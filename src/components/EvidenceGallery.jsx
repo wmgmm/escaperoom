@@ -9,9 +9,9 @@ const ARTIFACTS = [
   {
     id: 'A',
     label: 'The Whiteboard',
-    filename: 'Exhibit_A_evidence_whiteboard.png',
+    filename: 'Exhibit_A_evidence_whiteboard.jpg',
     svgPath: `${BASE}placeholders/evidence_whiteboard_thumb.webp`,
-    downloadPath: `${BASE}placeholders/evidence_whiteboard.png`,
+    downloadPath: `${BASE}placeholders/evidence_whiteboard.jpg`,
     altText: 'Whiteboard scrawled with project notes, URGENT stamp overlaid',
     accentType: 'stamp',
     accentText: 'URGENT',
