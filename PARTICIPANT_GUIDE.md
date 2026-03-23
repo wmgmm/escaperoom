@@ -14,6 +14,38 @@
 
 ---
 
+## THE CAST (A BRIEF AND PAINFUL HISTORY)
+
+**Professor R. Albright** — Research Lead, School of Medicine
+
+Recipient of three consecutive Outstanding Researcher commendations, one honorary fellowship,
+and what colleagues describe as "an extraordinary relationship with the concept of filing."
+Professor Albright submitted the original £5M UKRI grant proposal in 2021, emailed the backup
+to himself in 2022, and has not been able to locate either since. He is currently at a
+conference in Helsinki. He is aware of the situation. He has described it as "fine."
+
+**Christopher Gravitas** — IT Services (formerly Dept. of Physics, UHW)
+
+Holds a PhD in Condensed Matter Physics. Spent seventeen years explaining Newton's laws of
+motion to medical students who considered it a scheduling inconvenience. Crossed to IT Services
+in 2019 on the reasonable assumption that problems there would have answers. Has submitted three
+incident reports about this investigation and is on his fifth cup of tea. Not offering to share.
+
+**The Vice-Chancellor**
+
+Has been copied on fourteen emails about this matter and replied to none of them. Her last
+message to Gravitas consisted entirely of the words "please advise" and a calendar invitation
+for 4:30pm. The calendar invitation did not include an agenda.
+
+**Prof. A. Whitmore** — Research Governance
+
+Technically responsible for ensuring grant applications are properly stored, version-controlled,
+and retrievable. Prof. Whitmore is aware of this responsibility. Prof. Whitmore would like to
+make clear that the responsibility also extends to the individual researcher. Complaints may be
+directed to Prof. Whitmore's office. Prof. Whitmore is not currently available.
+
+---
+
 ## YOUR OBJECTIVE
 
 Professor Albright’s failure of information governance means a £5M grant proposal is missing, with only 30 minutes until the deadline. I have isolated six critical artifacts from the chaos. Treat them as data points which you can investigate in any order. 
@@ -43,17 +75,17 @@ There is a difference. Pay attention to it.
 
 You have two options. Both work. Use whichever suits you (walk around and photograph or download my blurry images from the website).
 
-**Option A — Download from the website**
-Click any evidence card. The file saves to your Downloads folder.
-In Copilot, click the **paperclip / attachment icon** and select the file.
 
-**Option B — Photograph with your phone and move around the room**
-Open Microsoft Copilot on your phone (M365 app or copilot.microsoft.com).
-Tap the camera or attachment icon and photograph the artifact directly
-from the screen or a printed copy. Copilot can analyse a photo just as
+
+**Option A — Photograph with your phone and move around the room**
+Open Microsoft Copilot on your phone (M365 app).
+Tap the camera or attachment icon and photograph the artifact directly. Copilot can analyse a photo just as
 well as a downloaded file, provided you hold the camera steady and the
 text is legible. It cannot work miracles. Neither can I.
 
+**Option A — Download from the website**
+Click any evidence card. The file saves to your Downloads folder.
+In Copilot, click the **paperclip / attachment icon** and select the file.
 ---
 
 
