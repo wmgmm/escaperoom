@@ -4,6 +4,7 @@
 
 /* ---- Theme Variables ---- */
 :root {
+  color-scheme: light;
   --yellow: #FFFF00;
   --black:  #000000;
   --white:  #FFFFFF;
