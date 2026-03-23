@@ -19,9 +19,9 @@ const ARTIFACTS = [
   {
     id: 'B',
     label: 'The Coaster',
-    filename: 'Exhibit_B_evidence_coaster.png',
+    filename: 'Exhibit_B_evidence_coaster.jpg',
     svgPath: `${BASE}placeholders/evidence_coaster_thumb.webp`,
-    downloadPath: `${BASE}placeholders/evidence_coaster.png`,
+    downloadPath: `${BASE}placeholders/evidence_coaster.jpg`,
     altText: 'Circular coaster object on yellow background with evidence tag',
     accentType: 'tag',
     accentText: 'EVIDENCE B',

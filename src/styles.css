@@ -28,6 +28,7 @@
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
+  color-scheme: light;
 }
 
 body {
@@ -2195,5 +2196,32 @@ h1, h2, h3 {
 
   .outcome-headline {
     font-size: clamp(3rem, 18vw, 6rem);
+  }
+}
+
+/* ============================================================
+   FORCE LIGHT MODE — overrides Samsung Internet / iOS Safari
+   dark mode forcing. The page is intentionally yellow-on-black
+   and must never be auto-darkened by the browser.
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background: #FFFF00 !important;
+    color: #000000 !important;
+  }
+
+  .app-shell,
+  .main-page {
+    background: #FFFF00 !important;
+  }
+
+  .hero {
+    background: #FFFF00 !important;
+    color: #000000 !important;
+  }
+
+  .evidence-section {
+    background: #FFFF00 !important;
+    color: #000000 !important;
   }
 }
