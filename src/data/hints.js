@@ -15,22 +15,22 @@ export const HINTS = [
   {
     exhibit: 'C',
     artifact: 'The Letter',
-    prompt: 'Analyse this formal letter. Extract: the institution name and department in the letterhead, the full date, who it is addressed to (name and title), who signed it (name and role), and the full text of any highlighted or underlined passage. What decision is stamped on this letter and what does that imply?',
+    prompt: 'Analyse this formal letter. Extract: the institution name and department in the letterhead, the full date, who it is addressed to, and who signed it. What is the subject of the letter — does it reference a policy, a tool, or a specific incident? What does the stamp on this letter mean, and what governance issue does it point to?',
   },
   {
     exhibit: 'D',
-    artifact: 'The Ledger',
-    prompt: 'Analyse this open book. What are the page numbers shown? Describe the content of the sticky note on the right-hand page. What text appears underlined or highlighted on the left page? What does the chapter heading on the right page say? What might page 47 reveal in the context of a governance investigation?',
+    artifact: 'The Transcript',
+    prompt: 'Analyse this meeting transcript. Who are the participants? Extract every location mentioned — room names, building references, any specific place where something was stored or left. Is there any mention of a backup, a USB drive, or physical documents? Which room or location is most significant as a storage point?',
   },
   {
     exhibit: 'E',
-    artifact: 'The Fragments',
-    prompt: 'Analyse these four map fragments arranged on a dark background. List every room name or location label visible across all fragments. Identify which area is marked with a red X — what is the exact room name? Describe the direction any arrows are pointing and what they lead to. Which specific location is the most significant finding?',
+    artifact: 'The Survey',
+    prompt: 'Analyse this staff survey spreadsheet. What question or topic does it cover? Look for any free-text responses that mention a specific room, location, or storage area. Do any responses refer to where files, backups, or documents were placed? What is the most frequently cited or significant location mentioned?',
   },
   {
     exhibit: 'F',
     artifact: 'The Receipt',
-    prompt: 'Analyse this receipt. Extract: the organisation name, reference number, full date, and every line item with its cost. Which item is flagged as unauthorised — give the exact label and amount. What is the total amount charged and to which payment method? What category of expenditure does the flagged item fall under, and why is it significant in a governance context?',
+    prompt: 'Analyse this receipt. Extract: the vendor name, date, and every line item with its cost. Is any item flagged, highlighted, or marked as unauthorised? What type of product or service was purchased — is it software, a subscription, or a tool? Why would purchasing this item without approval represent a governance failure?',
   },
 ];
 
