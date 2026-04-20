@@ -39,6 +39,10 @@ export default function SuccessScreen({ onRestart, player, result }) {
               <span className="outcome-result-card__val">{result.failure}</span>
             </div>
             <div className="outcome-result-card__row">
+              <span className="outcome-result-card__key">The threat</span>
+              <span className="outcome-result-card__val">{result.threat}</span>
+            </div>
+            <div className="outcome-result-card__row">
               <span className="outcome-result-card__key">The location</span>
               <span className="outcome-result-card__val">{result.location}</span>
             </div>

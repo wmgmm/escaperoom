@@ -46,6 +46,10 @@ export default function FailureScreen({ onRestart, timeExpired, result, attemptC
               <span className="outcome-result-card__val">{result.failure || '—'}</span>
             </div>
             <div className="outcome-result-card__row">
+              <span className="outcome-result-card__key">Your threat</span>
+              <span className="outcome-result-card__val">{result.threat || '—'}</span>
+            </div>
+            <div className="outcome-result-card__row">
               <span className="outcome-result-card__key">Your location</span>
               <span className="outcome-result-card__val">{result.location || '—'}</span>
             </div>
