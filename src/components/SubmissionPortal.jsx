@@ -74,7 +74,7 @@ export default function SubmissionPortal({ onSubmit }) {
         <div className="form-field">
           <label className="form-label" htmlFor="field-threat">
             II &mdash; THE THREAT
-            <span className="form-label__hint">What is at stake if this reaches the press?</span>
+            <span className="form-label__hint">What is at stake?</span>
           </label>
           <input
             id="field-threat"

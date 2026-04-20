@@ -96,7 +96,7 @@ export default function App() {
       failure.toLowerCase().includes('unsanctioned') ||
       failure.toLowerCase().includes('ai tool') ||
       failure === 'Unsanctioned AI Tool Usage';
-    const threatOk = threat.trim().length > 0;
+    const threatOk = threat.toLowerCase().includes('grant');
     const loc = location.toLowerCase();
     const locationCorrect = loc.includes('server room b') || loc.includes('room b');
     const solved = failureCorrect && threatOk && locationCorrect;

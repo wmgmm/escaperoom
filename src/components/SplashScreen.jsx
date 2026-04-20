@@ -9,10 +9,7 @@ export default function SplashScreen({ onStart }) {
   const validate = () => {
     const e = {};
     if (!name.trim()) e.name = 'Please enter your name.';
-    const emailLower = email.trim().toLowerCase();
-    if (!emailLower.endsWith('@cardiff.ac.uk') && !emailLower.endsWith('@cf.ac.uk')) {
-      e.email = 'Please use your Cardiff University email.';
-    }
+    if (!email.trim()) e.email = 'Please enter your email.';
     return e;
   };
 
@@ -91,7 +88,7 @@ export default function SplashScreen({ onStart }) {
               <input
                 type="email"
                 className={`splash-input ${errors.email ? 'splash-input--error' : ''}`}
-                placeholder="name@cardiff.ac.uk"
+                placeholder="name@example.com"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 onKeyDown={e => e.key === 'Enter' && handleStart()}
