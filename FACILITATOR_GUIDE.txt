@@ -4,17 +4,6 @@ Classification: FACILITATOR EYES ONLY
 
 ======================================================================
 
-WHAT THIS IS
-
-A 30-minute competitive exercise. Participants use Microsoft Copilot's
-image analysis to investigate six evidence artifacts, identify a
-governance failure, and locate a missing grant application before a
-countdown expires.
-
-The scenario is fictional. The AI skills being practised are not.
-
-======================================================================
-
 SETUP
 
 1. Direct participants to the website URL.
